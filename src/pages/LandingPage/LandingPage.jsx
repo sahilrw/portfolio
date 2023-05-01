@@ -13,7 +13,7 @@ const LandingPage = () => {
 
       <div className="max-w-4xl w-full relative z-10">
         <div id="home" className="flex items-center min-h-screen pb-96 py-12 px-6 text-white">
-          <div className="bg-black flex flex-col justify-between md:flex-row p-12 bg-opacity-80 rounded-md">
+          <div className="bg-black flex flex-col-reverse gap-y-12 justify-between md:flex-row p-12 bg-opacity-80 rounded-md">
             <div className="md:w-1/2">
               <h1 className="text-4xl font-bold mb-4">Hello, I'm Sahil</h1>
               <p className="mb-8">Welcome to my portfolio website. You can learn more about me and see my work here.</p>
