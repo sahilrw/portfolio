@@ -8,13 +8,13 @@ const Navbar = () => {
       </div>
       <div className="flex items-center justify-end">
         <div className="text-sm">
-          <a href="#home" className="block mt-4 inline-block text-teal-200 hover:text-white mr-4">
+          <a href="#home" className="block mt-4 inline-block text-white hover:text-lime-400 mr-4">
             Home
           </a>
-          <a href="#about" className="block mt-4 inline-block text-teal-200 hover:text-white mr-4">
+          <a href="#about" className="block mt-4 inline-block text-white hover:text-lime-400 mr-4">
             About
           </a>
-          <a href="#contact" className="mt-4 inline-block text-teal-200 hover:text-white">
+          <a href="#contact" className="mt-4 inline-block text-white hover:text-lime-400 mr-4">
             Contact
           </a>
         </div>
