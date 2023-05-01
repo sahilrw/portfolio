@@ -55,7 +55,6 @@ const LandingPage = () => {
         <div className="grid grid-cols-2 gap-4">
           <PortfolioCard
             title="Meme generator"
-            bodyText="hello"
             imageSrc="projectMeme.jpg"
             imgAltTxt="hello"
             clickUrl="https://template-challenge-topaz.vercel.app/">
@@ -64,7 +63,6 @@ const LandingPage = () => {
           </PortfolioCard>
           <PortfolioCard
             title="Review cards"
-            bodyText="hello"
             imageSrc="projectReview.jpg"
             imgAltTxt="hello"
             clickUrl="https://leafy-bavarois-d0b9f1.netlify.app/">
@@ -74,7 +72,6 @@ const LandingPage = () => {
 
           <PortfolioCard
             title="Restaurant menu grid"
-            bodyText="hello"
             imageSrc="projectRestaurant.jpg"
             imgAltTxt="hello"
             clickUrl="https://chimerical-malasada-5266f6.netlify.app/">
