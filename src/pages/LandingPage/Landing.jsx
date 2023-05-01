@@ -1,6 +1,7 @@
 import React from 'react';
 import scrollToElement from '../../shared/utility/scrollToElement';
 import PortfolioCard from './PortfolioCard';
+import ContactForm from './ContactForm';
 
 const LandingPage = () => {
   const heroImage = 'hero.jpg';
@@ -83,7 +84,7 @@ const LandingPage = () => {
 
       <div id="contact" className="min-h-screen py-12 px-6 text-white">
         <h2 className="text-3xl font-bold mb-4">Contact</h2>
-        {/* You can add contact information or a form here */}
+        <ContactForm />
       </div>
     </div>
   );
