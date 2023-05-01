@@ -105,29 +105,6 @@ const Render3DShape = ({
       renderScene();
     };
 
-    // Currently disabled. Remember to uncomment the event listener adder and remover if you want to use this.
-    // just ctrl + f "onKeyDown" to find the relevant code
-    // const onKeyDown = (event) => {
-    //   event.preventDefault();
-    //   switch (event.key) {
-    //     case 'ArrowUp':
-    //       object.rotation.x -= 0.05;
-    //       break;
-    //     case 'ArrowDown':
-    //       object.rotation.x += 0.05;
-    //       break;
-    //     case 'ArrowLeft':
-    //       object.rotation.y -= 0.05;
-    //       break;
-    //     case 'ArrowRight':
-    //       object.rotation.y += 0.05;
-    //       break;
-    //     default:
-    //       break;
-    //   }
-    //   renderScene();
-    // };
-
     if (animateOnScroll) {
       window.addEventListener('scroll', onScroll);
       window.addEventListener('wheel', onScroll);
@@ -136,7 +113,6 @@ const Render3DShape = ({
     if (followMouse) {
       window.addEventListener('mousemove', onMouseMove);
     }
-    // window.addEventListener('keydown', onKeyDown);
 
     const animate = () => {
       if (resizeRendererToDisplaySize(renderer)) {
@@ -154,7 +130,6 @@ const Render3DShape = ({
       window.removeEventListener('scroll', onScroll);
       window.removeEventListener('wheel', onScroll);
       window.removeEventListener('mousemove', onMouseMove);
-      // window.removeEventListener('keydown', onKeyDown);
     };
   }, []);
 
