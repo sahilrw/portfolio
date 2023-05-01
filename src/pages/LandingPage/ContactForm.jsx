@@ -18,7 +18,7 @@ const ContactForm = () => {
         <h5>Email sent! Talk to you soon! :D</h5>
         <br />
         <br />
-        <h3 className="text-xl font-bold mb-4">Here is what you sent: </h3>
+        <h3 className="text-xl font-bold mb-4">Here is a copy of your email: </h3>
         <p>
           <span className="font-bold">email address:</span> {email}
         </p>
