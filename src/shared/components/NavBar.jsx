@@ -5,9 +5,9 @@ const Navbar = () => {
   const navbarRef = useRef();
 
   // useEffect with an empty array works as a onMount function, meaning the code in this block
-  // will run when the component is mounted for the first time
-  // the reutrn function is the disMount part and runs whenever the component is unmounted
-  // in this case it removes the eventlistener for the scroll event
+  // will run when the component is mounted for the first time. The return function provides
+  // the disMount functionality and runs whenever the component is unmounted
+  // in this case it removes the eventlistener for the scroll event.
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY > 50) {
