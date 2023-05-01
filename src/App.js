@@ -1,4 +1,4 @@
-import LandingPage from './pages/LandingPage';
+import LandingPage from './pages/Landing';
 import Navbar from './shared/components/NavBar';
 import Footer from './shared/components/Footer';
 
