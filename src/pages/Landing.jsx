@@ -1,16 +1,8 @@
 import React from 'react';
+import scrollToElement from '../shared/utility/scrollToElement';
 
 const LandingPage = () => {
   const heroImage = 'hero.jpg';
-
-  // This function will be called when the "Learn More" button is clicked
-  const handleLearnMoreClick = () => {
-    // Find the element you want to scroll to
-    const aboutSection = document.getElementById('about');
-
-    // Scroll to the element
-    aboutSection.scrollIntoView({ behavior: 'smooth' });
-  };
 
   return (
     <div className="max-w-4xl w-full">
@@ -21,7 +13,7 @@ const LandingPage = () => {
           <h1 className="text-4xl font-bold mb-4">Hello, I'm Sahil</h1>
           <p className="mb-8">Welcome to my portfolio website. You can learn more about me and see my work here.</p>
           <button
-            onClick={handleLearnMoreClick}
+            onClick={() => scrollToElement('about')}
             className="bg-white text-blue-900 px-6 py-3 rounded hover:bg-lime-400 hover:text-black hover:font-bold font-bold cursor-pointer">
             Learn More
           </button>
