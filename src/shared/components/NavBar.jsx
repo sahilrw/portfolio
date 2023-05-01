@@ -1,4 +1,4 @@
-import React from 'react';
+import scrollToElement from '../utility/scrollToElement';
 
 const Navbar = () => {
   return (
@@ -8,15 +8,21 @@ const Navbar = () => {
       </div>
       <div className="flex items-center justify-end">
         <div className="text-sm">
-          <a href="#home" className="block mt-4 inline-block text-white hover:text-lime-400 mr-4">
+          <button
+            onClick={() => scrollToElement('home')}
+            className="inline-block text-white hover:text-lime-400 mr-4 hover:underline cursor-pointer">
             Home
-          </a>
-          <a href="#about" className="block mt-4 inline-block text-white hover:text-lime-400 mr-4">
+          </button>
+          <button
+            onClick={() => scrollToElement('about')}
+            className="inline-block text-white hover:text-lime-400 mr-4 hover:underline cursor-pointer">
             About
-          </a>
-          <a href="#contact" className="mt-4 inline-block text-white hover:text-lime-400 mr-4">
+          </button>
+          <button
+            onClick={() => scrollToElement('contact')}
+            className="inline-block text-white hover:text-lime-400 mr-4 hover:underline cursor-pointer">
             Contact
-          </a>
+          </button>
         </div>
       </div>
     </nav>
