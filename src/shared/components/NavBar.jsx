@@ -23,19 +23,21 @@ const Navbar = () => {
   return (
     <nav ref={navbarRef} className="navbar fixed top-0 w-full flex items-center justify-between flex-wrap bg-black p-6">
       <div className="flex items-center flex-shrink-0 text-white mr-12">
-        <span className="font-semibold text-xl tracking-tight">Sahil Dev</span>
+        <button onClick={() => scrollToElement('home')} className="font-semibold text-xl tracking-tight">
+          Sahil Dev
+        </button>
       </div>
       <div className="flex items-center justify-end">
-        <div className="text-sm">
-          <button
-            onClick={() => scrollToElement('home')}
-            className="inline-block text-white hover:text-lime-400 mr-4 hover:underline cursor-pointer">
-            Home
-          </button>
+        <div className="text-base">
           <button
             onClick={() => scrollToElement('about')}
             className="inline-block text-white hover:text-lime-400 mr-4 hover:underline cursor-pointer">
             About
+          </button>
+          <button
+            onClick={() => scrollToElement('portfolio')}
+            className="inline-block text-white hover:text-lime-400 mr-4 hover:underline cursor-pointer">
+            Portfolio
           </button>
           <button
             onClick={() => scrollToElement('contact')}
