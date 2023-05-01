@@ -25,7 +25,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav ref={navbarRef} className="navbar fixed top-0 w-full flex items-center justify-between flex-wrap bg-black p-6">
+    <nav
+      ref={navbarRef}
+      className="navbar fixed top-0 w-full flex items-center justify-between flex-wrap bg-black p-6 z-20">
       <div className="flex items-center flex-shrink-0 text-white mr-12">
         <button onClick={() => scrollToElement('home')} className="font-semibold text-xl tracking-tight">
           Sahil Dev
