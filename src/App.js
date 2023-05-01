@@ -10,7 +10,7 @@ function App() {
     // Cool! This is a great way to make sure the footer is always at the bottom
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main className="flex-grow">
+      <main className="flex-grow bg-slate-950">
         <LandingPage />
       </main>
       <Footer />
