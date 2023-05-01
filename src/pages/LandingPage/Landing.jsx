@@ -57,7 +57,7 @@ const LandingPage = () => {
           <PortfolioCard
             title="Meme generator"
             imageSrc="projectMeme.jpg"
-            imgAltTxt="hello"
+            imgAltTxt="Preview image of the meme generator project"
             clickUrl="https://template-challenge-topaz.vercel.app/">
             Fully responsive site to generate fun memes, riddles, quotes, and jokes with one click. Made with HTML, CSS,
             and JavaScript.
@@ -65,7 +65,7 @@ const LandingPage = () => {
           <PortfolioCard
             title="Review cards"
             imageSrc="projectReview.jpg"
-            imgAltTxt="hello"
+            imgAltTxt="Preview image of review cards project"
             clickUrl="https://leafy-bavarois-d0b9f1.netlify.app/">
             Fully responsive webpage made using HTML, CSS and JavaScript. This webpage displays a collection of images
             and descriptions of reviews.
@@ -74,7 +74,7 @@ const LandingPage = () => {
           <PortfolioCard
             title="Restaurant menu grid"
             imageSrc="projectRestaurant.jpg"
-            imgAltTxt="hello"
+            imgAltTxt="Preview image of a restaurant menu grid project"
             clickUrl="https://chimerical-malasada-5266f6.netlify.app/">
             Restaurant menu card developed using HTML, CSS, and JavaScript, with a simple and user-friendly design.
             Fully responsive for easy navigation.
