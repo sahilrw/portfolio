@@ -1,4 +1,4 @@
-import LandingPage from './pages/LandingPage/Landing';
+import LandingPage from './pages/LandingPage/LandingPage';
 import Navbar from './shared/components/NavBar';
 import Footer from './shared/components/Footer';
 import Render3DShape from './pages/LandingPage/Render3DShape';

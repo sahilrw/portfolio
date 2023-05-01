@@ -6,7 +6,7 @@ const Render3DShape = ({
   followMouse = false,
   animateOnScroll = true,
   shape = 'cube',
-  color = '0xffffff'
+  color = '#ffffff'
 }) => {
   const canvasRef = useRef(null);
 
