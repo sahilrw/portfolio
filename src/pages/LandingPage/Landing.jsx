@@ -10,7 +10,7 @@ const LandingPage = () => {
     <div className="max-w-4xl w-full">
       <div
         id="home"
-        className="flex flex-col md:flex-row justify-between items-center min-h-screen py-12 px-6 text-white">
+        className="flex flex-col md:flex-row justify-between items-center min-h-screen pb-96 py-12 px-6 text-white">
         <div className="md:w-1/2">
           <h1 className="text-4xl font-bold mb-4">Hello, I'm Sahil</h1>
           <p className="mb-8">Welcome to my portfolio website. You can learn more about me and see my work here.</p>
