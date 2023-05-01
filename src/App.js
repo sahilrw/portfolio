@@ -1,6 +1,7 @@
 import LandingPage from './pages/LandingPage/Landing';
 import Navbar from './shared/components/NavBar';
 import Footer from './shared/components/Footer';
+import PyramidAnimation from './pages/LandingPage/Pyramid';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <main className="flex justify-center bg-gray-900">
         <LandingPage />
       </main>
+      <PyramidAnimation />
       <Footer />
     </div>
   );
