@@ -13,3 +13,12 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+.navbar {
+  position: sticky;
+  transition: all 0.3s;
+  padding: 2rem;
+}
+
+.navbar.scrolled {
+  padding: 1rem;
+}
