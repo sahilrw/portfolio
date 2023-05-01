@@ -23,3 +23,8 @@ code {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
+:focus {
+  outline: 2px solid #a3e635;
+  border-radius: 4px;
+}
