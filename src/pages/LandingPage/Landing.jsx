@@ -1,5 +1,6 @@
 import React from 'react';
-import scrollToElement from '../shared/utility/scrollToElement';
+import scrollToElement from '../../shared/utility/scrollToElement';
+import PortfolioCard from './PortfolioCard';
 
 const LandingPage = () => {
   const heroImage = 'hero.jpg';
@@ -42,11 +43,45 @@ const LandingPage = () => {
         <p>
           I'm excited to leverage my skills and enthusiasm to contribute to the growth of an innovative organization.
         </p>
+        <button
+          onClick={() => scrollToElement('portfolio')}
+          className="bg-white text-blue-900 px-6 py-3 rounded mt-8 hover:bg-lime-400 hover:text-black hover:font-bold font-bold cursor-pointer">
+          See my work
+        </button>
       </div>
 
       <div id="portfolio" className="min-h-screen py-12 px-6 text-white">
         <h2 className="text-3xl font-bold mb-4">My Portfolio</h2>
-        {/* You can add portfolio items here */}
+        <div className="grid grid-cols-2 gap-4">
+          <PortfolioCard
+            title="Meme generator"
+            bodyText="hello"
+            imageSrc="projectMeme.jpg"
+            imgAltTxt="hello"
+            clickUrl="https://template-challenge-topaz.vercel.app/">
+            Fully responsive site to generate fun memes, riddles, quotes, and jokes with one click. Made with HTML, CSS,
+            and JavaScript.
+          </PortfolioCard>
+          <PortfolioCard
+            title="Review cards"
+            bodyText="hello"
+            imageSrc="projectReview.jpg"
+            imgAltTxt="hello"
+            clickUrl="https://leafy-bavarois-d0b9f1.netlify.app/">
+            Fully responsive webpage made using HTML, CSS and JavaScript. This webpage displays a collection of images
+            and descriptions of reviews.
+          </PortfolioCard>
+
+          <PortfolioCard
+            title="Restaurant menu grid"
+            bodyText="hello"
+            imageSrc="projectRestaurant.jpg"
+            imgAltTxt="hello"
+            clickUrl="https://chimerical-malasada-5266f6.netlify.app/">
+            Restaurant menu card developed using HTML, CSS, and JavaScript, with a simple and user-friendly design.
+            Fully responsive for easy navigation.
+          </PortfolioCard>
+        </div>
       </div>
 
       <div id="contact" className="min-h-screen py-12 px-6 text-white">
