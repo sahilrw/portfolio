@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
+import EmailConfirm from './EmailConfirm';
 
 const ContactForm = () => {
   const [state, handleSubmit] = useForm('mpzebpaq'); // "mpzebpaq" -> form id from formspree.io
@@ -15,16 +16,7 @@ const ContactForm = () => {
     // TODO: Extract this into a seperate card component with some nice styling
     return (
       <>
-        <h5>Email sent! Talk to you soon! :D</h5>
-        <br />
-        <br />
-        <h3 className="text-xl font-bold mb-4">Here is a copy of your email: </h3>
-        <p>
-          <span className="font-bold">email address:</span> {email}
-        </p>
-        <p>
-          <span className="font-bold">message:</span> {message}
-        </p>
+        <EmailConfirm email={email} message={message}/>
       </>
     );
   }
