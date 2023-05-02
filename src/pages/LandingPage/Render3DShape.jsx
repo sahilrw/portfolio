@@ -134,7 +134,7 @@ const Render3DShape = ({
       window.removeEventListener('wheel', onScroll);
       window.removeEventListener('mousemove', onMouseMove);
     };
-  }, []);
+  }, [shape]);
 
   return (
     <div className={`pt-32 bg-black ${className}`}>
