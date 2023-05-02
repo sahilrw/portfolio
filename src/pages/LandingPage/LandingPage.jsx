@@ -1,15 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react'; // <-- useState is a react hook and imported here, you must always import react hooks
 import scrollToElement from '../../shared/utility/scrollToElement';
 import PortfolioCard from './PortfolioCard';
 import ContactForm from './ContactForm';
 import Render3DShape from './Render3DShape';
 
+const possibleShapes = [
+  'torus',
+  'sphere',
+  'dodecahedron',
+  'icosahedron',
+  'octahedron',
+  'tetrahedron',
+  'torusknot',
+  'sahilsknot'
+];
+
 const LandingPage = () => {
   const heroImage = 'hero.jpg';
+  const [shape, setShape] = useState('torus');
+  // shape is the current shape value
+  // use setShape to update the shape value
+  // setShape is a function returned by useState, a so called react hook
+  // when shape changes the component will re-render and you will see the result on the screen
+  // this does not happen with classic javascript let and const variables.
 
+  const handleClick = () => {
+    // Calculate something here
+    // return setShape(); <--put the result in setShape()
+  };
   return (
     <div>
-      <Render3DShape className="fixed top-0 left-0 z-0 w-screen h-screen opacity-50" />
+      <Render3DShape className="fixed top-0 left-0 z-0 w-screen h-screen opacity-50" shape={shape} />
 
       <div className="max-w-4xl w-full relative z-10">
         <div id="home" className="flex items-center min-h-screen pb-96 py-12 px-6 text-white">
@@ -21,6 +42,12 @@ const LandingPage = () => {
                 onClick={() => scrollToElement('about')}
                 className="bg-white text-blue-900 px-6 py-3 rounded hover:bg-lime-400 hover:text-black hover:font-bold font-bold cursor-pointer">
                 Learn More
+              </button>
+              <p className="my-2">Current Shape: ???</p>
+              <button
+                // onClick={() => youFunctionHere() } <-- put the function you want to call here>
+                className="">
+                New Shape
               </button>
             </div>
             <div className="md:w-1/2">
