@@ -95,11 +95,11 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-          <div id="contact" className="py-12 px-6 text-white">
-            <div className="bg-black bg-opacity-80 p-12 rounded-md">
-              <h2 className="text-3xl font-bold mb-4">Contact</h2>
-              <ContactForm />
-            </div>
+        <div id="contact" className="min-h-screen py-12 px-6 max-w-3xl text-white">
+          <div className="bg-black bg-opacity-80 p-12 rounded-md">
+            <h2 className="text-3xl font-bold mb-4">Contact</h2>
+            <ContactForm />
+          </div>
         </div>
       </div>
     </div>
