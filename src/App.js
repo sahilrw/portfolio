@@ -6,7 +6,7 @@ import Contactbox from './shared/components/ContactBox/ContactBox';
 
 const possibleShapes = ['torus', 'sphere', 'dodecahedron', 'icosahedron', 'octahedron', 'tetrahedron', 'torusknot'];
 const selectRandomShape = () => {
-  return 'torusknot'; //disable this line to enable random shapes
+  // return 'torusknot'; //disable this line to enable random shapes
   const randomIndex = Math.floor(Math.random() * possibleShapes.length);
   return possibleShapes[randomIndex];
 };
