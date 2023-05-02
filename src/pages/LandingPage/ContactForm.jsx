@@ -21,7 +21,7 @@ const ContactForm = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-lg">
+    <form onSubmit={handleSubmit}>
       <div className="mb-4">
         <label htmlFor="email" className="block text-white font-bold mb-2">
           Email Address
