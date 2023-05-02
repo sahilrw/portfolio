@@ -13,7 +13,6 @@ const ContactForm = () => {
   }, [email, message]);
 
   if (state.succeeded) {
-    // TODO: Extract this into a seperate card component with some nice styling
     return (
       <>
         <EmailConfirm email={email} message={message}/>
