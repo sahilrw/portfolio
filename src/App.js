@@ -4,7 +4,8 @@ import Footer from './shared/components/Footer';
 import Render3DShape from './pages/LandingPage/Render3DShape';
 import Contactbox from './shared/components/ContactBox/ContactBox';
 
-const possibleShapes = ['torus', 'sphere', 'dodecahedron', 'icosahedron', 'octahedron', 'tetrahedron', 'torusknot'];
+// const possibleShapes = ['torus', 'sphere', 'dodecahedron', 'icosahedron', 'octahedron', 'tetrahedron', 'torusknot'];
+const possibleShapes = ['torus', 'sahilknot', 'torusknot'];
 const selectRandomShape = () => {
   return 'torusknot'; //disable this line to enable random shapes
   const randomIndex = Math.floor(Math.random() * possibleShapes.length);
