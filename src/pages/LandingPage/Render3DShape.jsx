@@ -62,7 +62,7 @@ const Render3DShape = ({
         geometry = new THREE.TubeGeometry(curve, 20, 0.5, 8, false);
         break;
       case 'torusknot':
-        geometry = new THREE.TorusKnotGeometry(1.5, 0.5, 100, 16);
+        geometry = new THREE.TorusKnotGeometry(0.5, 1.2, 3, 30);
         break;
       default:
         geometry = new THREE.ConeGeometry(2, 4, 8);
