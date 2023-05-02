@@ -1,6 +1,4 @@
 import React from 'react';
-// import { useForm, ValidationError } from '@formspree/react';
-// import ContactForm from './ContactForm'
 
 const EmailConfirm = ({email, message}) => {
   return (
@@ -10,7 +8,7 @@ const EmailConfirm = ({email, message}) => {
         <br />
         <div className='bg-gray-800 p-6 rounded-lg'>
             <h3 className="text-xl font-bold mb-4">Here is a copy of your email: </h3>
-            <p>
+            <p className='py-1'>
                 <span className="font-bold">Email Address:</span> {email}
             </p>
             <p>

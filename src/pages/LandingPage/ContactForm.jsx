@@ -16,7 +16,7 @@ const ContactForm = () => {
     // TODO: Extract this into a seperate card component with some nice styling
     return (
       <>
-        <EmailConfirm />
+        <EmailConfirm email={email} message={message}/>
       </>
     );
   }
