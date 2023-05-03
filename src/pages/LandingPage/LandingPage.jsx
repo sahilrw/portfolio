@@ -48,8 +48,8 @@ const LandingPage = () => {
               <p className="my-2">Current Shape: {shape}</p>
               <button
                 // onClick={() => youFunctionHere() } <-- put the function you want to call here>
-                onClick={() => handleClick() }
-                className="bg-white rounded px-6 py-3 border-2 border-indigo-500 text-green-600 font-bold  hover:bg-lime-400 hover:text-black ">
+                onClick={() => handleClick()}
+                className="rounded px-6 py-3 border-2 outline-none border-white text-white font-bold  hover:bg-lime-400 hover:text-black ">
                 New Shape
               </button>
             </div>
