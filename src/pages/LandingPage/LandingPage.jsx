@@ -25,10 +25,10 @@ const LandingPage = () => {
   // this does not happen with classic javascript let and const variables.
 
   const handleClick = () => {
-    // Calculate something here
-    // return setShape(); <--put the result in setShape()
-    const setShape = Math.floor(Math.random() * possibleShapes.length);
-    return possibleShapes[setShape];
+    console.log('Shape shifter button clicked! Current shape: ', shape); //<-- console.log("someText", someVariable) super nice way to check if buttons and functions are working
+    const chooseRandomShape = Math.floor(Math.random() * possibleShapes.length);
+    return setShape(possibleShapes[chooseRandomShape]);
+    // return possibleShapes[setShape]; // kept for reference, can be deleted
   };
   return (
     <div>
