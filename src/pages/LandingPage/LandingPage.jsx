@@ -27,6 +27,8 @@ const LandingPage = () => {
   const handleClick = () => {
     // Calculate something here
     // return setShape(); <--put the result in setShape()
+    const setShape = Math.floor(Math.random() * possibleShapes.length);
+    return possibleShapes[setShape];
   };
   return (
     <div>
@@ -43,10 +45,11 @@ const LandingPage = () => {
                 className="bg-white text-blue-900 px-6 py-3 rounded hover:bg-lime-400 hover:text-black hover:font-bold font-bold cursor-pointer">
                 Learn More
               </button>
-              <p className="my-2">Current Shape: ???</p>
+              <p className="my-2">Current Shape: {shape}</p>
               <button
                 // onClick={() => youFunctionHere() } <-- put the function you want to call here>
-                className="">
+                onClick={() => handleClick() }
+                className="bg-white rounded px-6 py-3 border-2 border-indigo-500 text-green-600 font-bold  hover:bg-lime-400 hover:text-black ">
                 New Shape
               </button>
             </div>

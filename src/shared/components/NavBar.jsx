@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import scrollToElement from '../utility/scrollToElement';
+// import Logo from '../icons/Logo';
 
 const Navbar = () => {
   const navbarRef = useRef();
