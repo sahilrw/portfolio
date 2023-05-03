@@ -1,5 +1,6 @@
 import React from 'react';
 
+// TODO: add props for controlling color and size
 const Logo = () => {
   return (
     <>
