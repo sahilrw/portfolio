@@ -45,19 +45,13 @@ const LandingPage = () => {
                 className="bg-white text-blue-900 px-6 py-3 rounded hover:bg-lime-400 hover:text-black hover:font-bold font-bold cursor-pointer">
                 Learn More
               </button>
-              <p className="my-2">Current Shape: {shape}</p>
-              <button
-                // onClick={() => youFunctionHere() } <-- put the function you want to call here>
-                onClick={() => handleClick()}
-                className="rounded px-6 py-3 border-2 outline-none border-white text-white font-bold  hover:bg-lime-400 hover:text-black ">
-                New Shape
-              </button>
             </div>
             <div className="md:w-1/2">
               <img
+                onClick={() => handleClick()}
                 src={heroImage}
                 alt="Photography of Sahil"
-                className="w-3/4 h-auto rounded-full object-cover mx-auto"
+                className="w-3/4 h-auto rounded-full object-cover mx-auto cursor-pointer hover:scale-105 transition-scale duration-300 hover:outline hover:shadow-lg"
               />
             </div>
           </div>
