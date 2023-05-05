@@ -1,15 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react'; // <-- useState is a react hook and imported here, you must always import react hooks
 import scrollToElement from '../../shared/utility/scrollToElement';
 import PortfolioCard from './PortfolioCard';
 import ContactForm from './ContactForm';
 import Render3DShape from './Render3DShape';
 
+const POSSIBLE_SHAPES = [
+  'torus',
+  'sphere',
+  'dodecahedron',
+  'icosahedron',
+  'octahedron',
+  'tetrahedron',
+  'torusknot',
+  'sahilsknot'
+];
+
+const INITIAL_SHAPE_INDEX = 0;
+const INITIAL_SHAPE = POSSIBLE_SHAPES[INITIAL_SHAPE_INDEX];
+
 const LandingPage = () => {
   const heroImage = 'hero.jpg';
+  const [shape, setShape] = useState(INITIAL_SHAPE);
+  let prevShapeIndex = INITIAL_SHAPE_INDEX;
 
+  const handleClick = () => {
+    let randomIndex = prevShapeIndex;
+    while (randomIndex === prevShapeIndex) {
+      randomIndex = Math.floor(Math.random() * POSSIBLE_SHAPES.length);
+    }
+    prevShapeIndex = randomIndex;
+    setShape(POSSIBLE_SHAPES[randomIndex]);
+  };
   return (
     <div>
-      <Render3DShape className="fixed top-0 left-0 z-0 w-screen h-screen opacity-50" />
+      <Render3DShape className="fixed top-0 left-0 z-0 w-screen h-screen opacity-50" shape={shape} />
 
       <div className="max-w-4xl w-full relative z-10">
         <div id="home" className="flex items-center min-h-screen pb-96 py-12 px-6 text-white">
@@ -25,9 +49,10 @@ const LandingPage = () => {
             </div>
             <div className="md:w-1/2">
               <img
+                onClick={() => handleClick()}
                 src={heroImage}
                 alt="Photography of Sahil"
-                className="w-3/4 h-auto rounded-full object-cover mx-auto"
+                className="w-3/4 h-auto rounded-full object-cover mx-auto cursor-pointer transition-scale duration-300 hover:outline"
               />
             </div>
           </div>
@@ -95,11 +120,11 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-          <div id="contact" className="min-h-screen py-12 px-6 text-white">
-            <div className="bg-black bg-opacity-80 p-12 rounded-md max-w-3xl">
-              <h2 className="text-3xl font-bold mb-4">Contact</h2>
-              <ContactForm />
-            </div>
+        <div id="contact" className="min-h-screen py-12 px-6 text-white">
+          <div className="bg-black bg-opacity-80 p-12 rounded-md max-w-3xl">
+            <h2 className="text-3xl font-bold mb-4">Contact</h2>
+            <ContactForm />
+          </div>
         </div>
       </div>
     </div>

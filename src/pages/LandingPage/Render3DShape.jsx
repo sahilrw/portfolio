@@ -64,7 +64,7 @@ const Render3DShape = ({
       case 'torusknot':
         geometry = new THREE.TorusKnotGeometry(1.5, 0.5, 100, 16);
         break;
-      case 'knot-two':
+      case 'sahilsknot':
         geometry = new THREE.TorusKnotGeometry(0.5, 1.2, 3, 30);
         break;
       default:
@@ -134,7 +134,7 @@ const Render3DShape = ({
       window.removeEventListener('wheel', onScroll);
       window.removeEventListener('mousemove', onMouseMove);
     };
-  }, []);
+  });
 
   return (
     <div className={`pt-32 bg-black ${className}`}>
