@@ -14,6 +14,7 @@ const possibleShapes = [
   'torusknot',
   'sahilsknot'
 ];
+let prevShape = ''
 
 const LandingPage = () => {
   const heroImage = 'hero.jpg';
@@ -26,7 +27,10 @@ const LandingPage = () => {
 
   const handleClick = () => {
     console.log('Shape shifter button clicked! Current shape: ', shape); //<-- console.log("someText", someVariable) super nice way to check if buttons and functions are working
-    const chooseRandomShape = Math.floor(Math.random() * possibleShapes.length);
+    let chooseRandomShape = prevShape
+    while(chooseRandomShape === prevShape){
+        chooseRandomShape = Math.floor(Math.random() * possibleShapes.length);
+    } prevShape = chooseRandomShape
     return setShape(possibleShapes[chooseRandomShape]);
     // return possibleShapes[setShape]; // kept for reference, can be deleted
   };
@@ -51,7 +55,7 @@ const LandingPage = () => {
                 onClick={() => handleClick()}
                 src={heroImage}
                 alt="Photography of Sahil"
-                className="w-3/4 h-auto rounded-full object-cover mx-auto cursor-pointer hover:scale-105 transition-scale duration-300 hover:outline hover:shadow-lg"
+                className="w-3/4 h-auto rounded-full object-cover mx-auto cursor-pointer hover:scale-105 transition-scale duration-300 hover:outline"
               />
             </div>
           </div>
