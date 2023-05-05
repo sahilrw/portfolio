@@ -1,6 +1,6 @@
 # Site preview
 
-![Screenshot 2023-05-01 at 19 43 05](https://user-images.githubusercontent.com/9591781/235499365-df25b304-abf8-4016-9535-9e384ca267f1.png)
+![Screenshot 2023-05-05 at 13 01 19](https://user-images.githubusercontent.com/9591781/236441347-5f8a95ea-15cf-4dac-8649-aeb067222a89.png)
 
 # Getting Started with Create React App
 
