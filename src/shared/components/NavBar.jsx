@@ -29,7 +29,6 @@ const Navbar = () => {
     <nav
       ref={navbarRef}
       className="navbar fixed top-0 w-full flex items-center justify-between flex-wrap bg-black p-6 z-20">
-      {/* Make space by adding flex-gap to the div below, find the tailwind class for it and put it in the className attribute--> */}
       <div className="flex items-center flex-shrink-0 text-white mr-12 gap-x-2">
         <Logo />
         <button onClick={() => scrollToElement('home')} className="font-semibold text-2xl mb-0.5 tracking-tight">

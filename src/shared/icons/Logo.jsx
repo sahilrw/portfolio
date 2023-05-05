@@ -1,10 +1,9 @@
+{/* <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --> */}
 import React from 'react';
 
-// TODO: add props for controlling color and size
 const Logo = () => {
   return (
     <>
-      {/* <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --> */}
       <svg
         height="25px"
         width="25px"

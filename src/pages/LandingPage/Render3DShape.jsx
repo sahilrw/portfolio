@@ -135,7 +135,6 @@ const Render3DShape = ({
       window.removeEventListener('mousemove', onMouseMove);
     };
   });
-  // }, [shape]); There showed this warning in the terminal. Is it okay to remove this line?  Line 137:6:  React Hook useEffect has missing dependencies: 'animateOnScroll', 'color', and 'followMouse'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
 
   return (
     <div className={`pt-32 bg-black ${className}`}>
