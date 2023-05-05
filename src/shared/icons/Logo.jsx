@@ -1,5 +1,7 @@
-{/* <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --> */}
 import React from 'react';
+{
+  /* <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --> */
+}
 
 const Logo = () => {
   return (
