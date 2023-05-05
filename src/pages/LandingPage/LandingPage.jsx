@@ -19,7 +19,7 @@ const INITIAL_SHAPE_INDEX = 0;
 const INITIAL_SHAPE = POSSIBLE_SHAPES[INITIAL_SHAPE_INDEX];
 
 const LandingPage = () => {
-  const heroImage = 'hero.jpg';
+  const heroImage = 'luffy.jpeg';
   const [shape, setShape] = useState(INITIAL_SHAPE);
   let prevShapeIndex = INITIAL_SHAPE_INDEX;
 
@@ -62,7 +62,7 @@ const LandingPage = () => {
           <div className="bg-black bg-opacity-80 p-12 rounded-md">
             <h2 className="text-3xl font-bold mb-4">About me</h2>
             <p className="mb-8">
-              I'm a self-taught Frontend Web Developer with a strong foundation in HTML, CSS, and JavaScript. My passion
+              I'm a self-taught Frontend Web Developer with a strong foundation in HTML, CSS, and JavaScript. As I continue to expand my skills, I am excited to bring my expertise in HTML, CSS, and JavaScript to the development of web applications using React and Tailwind. My passion
               lies in creating responsive and mobile-friendly websites that combine functionality with an eye for
               design.
             </p>
@@ -93,6 +93,14 @@ const LandingPage = () => {
             <h2 className="text-3xl font-bold mb-4">My Portfolio</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <PortfolioCard
+                title="Airbnb Homepage"
+                imageSrc="airbnb.png"
+                imgAltTxt="Preview image of the Airbnb Homepage"
+                clickUrl="https://air-bnb-xi.vercel.app/">
+                The project showcases the ability to build a web application using modern frontend technologies and libraries such as React and Tailwind CSS.
+              </PortfolioCard>
+
+              <PortfolioCard
                 title="Meme generator"
                 imageSrc="projectMeme.jpg"
                 imgAltTxt="Preview image of the meme generator project"
@@ -100,6 +108,7 @@ const LandingPage = () => {
                 Fully responsive site to generate fun memes, riddles, quotes, and jokes with one click. Made with HTML,
                 CSS, and JavaScript.
               </PortfolioCard>
+
               <PortfolioCard
                 title="Review cards"
                 imageSrc="projectReview.jpg"
