@@ -55,7 +55,7 @@ const LandingPage = () => {
                 onClick={() => handleClick()}
                 src={heroImage}
                 alt="Photography of Sahil"
-                className="w-3/4 h-auto rounded-full object-cover mx-auto cursor-pointer hover:scale-105 transition-scale duration-300 hover:outline"
+                className="w-3/4 h-auto rounded-full object-cover mx-auto cursor-pointer transition-scale duration-300 hover:outline"
               />
             </div>
           </div>
