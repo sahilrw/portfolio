@@ -4,7 +4,7 @@ import PortfolioCard from './PortfolioCard';
 import ContactForm from './ContactForm';
 import Render3DShape from './Render3DShape';
 
-const possibleShapes = [
+const POSSIBLE_SHAPES = [
   'torus',
   'sphere',
   'dodecahedron',
@@ -14,25 +14,22 @@ const possibleShapes = [
   'torusknot',
   'sahilsknot'
 ];
-let prevShape = ''
+
+const INITIAL_SHAPE_INDEX = 0;
+const INITIAL_SHAPE = POSSIBLE_SHAPES[INITIAL_SHAPE_INDEX];
 
 const LandingPage = () => {
   const heroImage = 'hero.jpg';
-  const [shape, setShape] = useState('torus');
-  // shape is the current shape value
-  // use setShape to update the shape value
-  // setShape is a function returned by useState, a so called react hook
-  // when shape changes the component will re-render and you will see the result on the screen
-  // this does not happen with classic javascript let and const variables.
+  const [shape, setShape] = useState(INITIAL_SHAPE);
+  let prevShapeIndex = INITIAL_SHAPE_INDEX;
 
   const handleClick = () => {
-    console.log('Shape shifter button clicked! Current shape: ', shape); //<-- console.log("someText", someVariable) super nice way to check if buttons and functions are working
-    let chooseRandomShape = prevShape
-    while(chooseRandomShape === prevShape){
-        chooseRandomShape = Math.floor(Math.random() * possibleShapes.length);
-    } prevShape = chooseRandomShape
-    return setShape(possibleShapes[chooseRandomShape]);
-    // return possibleShapes[setShape]; // kept for reference, can be deleted
+    let randomIndex = prevShapeIndex;
+    while (randomIndex === prevShapeIndex) {
+      randomIndex = Math.floor(Math.random() * POSSIBLE_SHAPES.length);
+    }
+    prevShapeIndex = randomIndex;
+    setShape(POSSIBLE_SHAPES[randomIndex]);
   };
   return (
     <div>
