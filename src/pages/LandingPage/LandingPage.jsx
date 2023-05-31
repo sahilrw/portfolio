@@ -119,6 +119,14 @@ const LandingPage = () => {
               </PortfolioCard>
 
               <PortfolioCard
+                title="Weather App"
+                imageSrc="weather-app.png"
+                imgAltTxt="Preview image of weather app project"
+                clickUrl="https://weather-app-theta-lime.vercel.app/">
+                Check weather conditions with This React-based app. User-friendly interface displays temperature, humidity, wind speed, and other conditions. Stay informed, anywhere.
+              </PortfolioCard>
+
+              <PortfolioCard
                 title="Restaurant menu grid"
                 imageSrc="projectRestaurant.jpg"
                 imgAltTxt="Preview image of a restaurant menu grid project"
