@@ -110,12 +110,11 @@ const LandingPage = () => {
               </PortfolioCard>
 
               <PortfolioCard
-                title="Review cards"
-                imageSrc="projectReview.jpg"
-                imgAltTxt="Preview image of review cards project"
-                clickUrl="https://leafy-bavarois-d0b9f1.netlify.app/">
-                Fully responsive webpage made using HTML, CSS and JavaScript. This webpage displays a collection of
-                images and descriptions of reviews.
+                title="Weather App"
+                imageSrc="weather-app.png"
+                imgAltTxt="Preview image of weather app project"
+                clickUrl="https://weather-app-theta-lime.vercel.app/">
+                Check weather conditions with This React-based app. User-friendly interface displays temperature, humidity, wind speed, and other conditions. Stay informed, anywhere.
               </PortfolioCard>
 
               <PortfolioCard
