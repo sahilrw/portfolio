@@ -92,21 +92,13 @@ const LandingPage = () => {
           <div className="bg-black flex flex-col justify-between p-12 bg-opacity-80 rounded-md">
             <h2 className="text-3xl font-bold mb-4">My Portfolio</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <PortfolioCard
-                title="Airbnb Homepage"
-                imageSrc="airbnb.png"
-                imgAltTxt="Preview image of the Airbnb Homepage"
-                clickUrl="https://air-bnb-xi.vercel.app/">
-                The project showcases the ability to build a web application using modern frontend technologies and libraries such as React and Tailwind CSS.
-              </PortfolioCard>
 
               <PortfolioCard
-                title="Meme generator"
-                imageSrc="projectMeme.jpg"
-                imgAltTxt="Preview image of the meme generator project"
+                title="Preview Plex"
+                imageSrc="preview-plex.png"
+                imgAltTxt="Preview image of the Preview Plex App"
                 clickUrl="https://template-challenge-topaz.vercel.app/">
-                Fully responsive site to generate fun memes, riddles, quotes, and jokes with one click. Made with HTML,
-                CSS, and JavaScript.
+                Preview Plex is a dynamic movie app showcasing categorized movies fetched from the MovieDB API, featuring MovieList and details pages for easy browsing.
               </PortfolioCard>
 
               <PortfolioCard
@@ -115,6 +107,14 @@ const LandingPage = () => {
                 imgAltTxt="Preview image of weather app project"
                 clickUrl="https://weather-app-theta-lime.vercel.app/">
                 Check weather conditions with This React-based app. User-friendly interface displays temperature, humidity, wind speed, and other conditions. Stay informed, anywhere.
+              </PortfolioCard>
+
+              <PortfolioCard
+                title="Airbnb Homepage"
+                imageSrc="airbnb.png"
+                imgAltTxt="Preview image of the Airbnb Homepage"
+                clickUrl="https://air-bnb-xi.vercel.app/">
+                The project showcases the ability to build a web application using modern frontend technologies and libraries such as React and Tailwind CSS.
               </PortfolioCard>
 
               <PortfolioCard
