@@ -97,7 +97,7 @@ const LandingPage = () => {
                 title="Preview Plex"
                 imageSrc="preview-plex.png"
                 imgAltTxt="Preview image of the Preview Plex App"
-                clickUrl="https://template-challenge-topaz.vercel.app/">
+                clickUrl="https://preview-plex.vercel.app/">
                 Preview Plex is a dynamic movie app showcasing categorized movies fetched from the MovieDB API, featuring MovieList and details pages for easy browsing.
               </PortfolioCard>
 
