@@ -128,6 +128,33 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
+
+        {/* Freelance Projects */}
+        <div id="freelance" className="min-h-screen py-12 px-6 text-white">
+          <div className="bg-black flex flex-col justify-between p-12 bg-opacity-80 rounded-md">
+            <h2 className="text-3xl font-bold mb-4">Freelance Projects</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+              <PortfolioCard
+                title="HomeHelper AI"
+                imageSrc="homehelper-ai.png"
+                imgAltTxt="Preview image of the Homehelper AI"
+                clickUrl="https://pic2-quote-v1.vercel.app/">
+
+                Introducing HomeHelper: Your personal construction expert. AI-powered guidance for every project, from beginners to DIY pros. Built with Next.js and TailwindCSS.
+              </PortfolioCard>
+
+              <PortfolioCard
+                title="Dialog AI"
+                imageSrc="whatsapp-bot.png"
+                imgAltTxt="Preview image of Dialog AI(Whatsapp bot)"
+                clickUrl="https://dialog-ai.vercel.app/">
+                DialogAI: WhatsApp bot revolutionizes communication. Transcribes voice messages, generates summaries, and answers queries using OpenAI's advanced tech. I contributed React and Tailwind for frontend.
+              </PortfolioCard>
+            </div>
+          </div>
+        </div>
+
         <div id="contact" className="min-h-screen py-12 px-6 text-white">
           <div className="bg-black bg-opacity-80 p-12 rounded-md max-w-3xl">
             <h2 className="text-3xl font-bold mb-4">Contact</h2>
