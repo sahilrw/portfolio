@@ -62,11 +62,10 @@ const LandingPage = () => {
           <div className="bg-black bg-opacity-80 p-12 rounded-md">
             <h2 className="text-3xl font-bold mb-4">About me</h2>
             <p className="mb-8">
-              I'm a self-taught Frontend Web Developer with a strong foundation in HTML, CSS, and JavaScript. As I continue to expand my skills, I am excited to bring my expertise in HTML, CSS, and JavaScript to the development of web applications using React and Tailwind. My passion
-              lies in creating responsive and mobile-friendly websites that combine functionality with an eye for
-              design.
+              I'm Sahil, a passionate Frontend Web Developer with a solid foundation in HTML, CSS, and JavaScript. I've also gained expertise in Python, ReactJS, NextJS, and TailwindCSS. As I continue to expand my skills, I am excited to bring my expertise in web development to the creation of dynamic and engaging user experiences.
             </p>
             <p className="mb-8">
+              My passion lies in creating responsive and mobile-friendly websites that combine functionality with an eye for design.
               I'm always keeping up with the latest trends in frontend development and am eager to learn and implement
               new technologies. With a deep interest in AI, I aim to merge creativity with technology to deliver
               high-quality web solutions.
@@ -76,6 +75,7 @@ const LandingPage = () => {
               Display, to practical webpages like a Restaurant Menu Card. Each project has refined my skills and
               enhanced my problem-solving abilities.
             </p>
+            <p className='mb-8'>In addition to my project work, I have valuable experience in freelance projects, where I've collaborated with clients to create tailored solutions. I thrive in team environments and have successfully contributed to building frontend pages for multiple AI bots.</p>
             <p>
               I'm excited to leverage my skills and enthusiasm to contribute to the growth of an innovative
               organization.
